@@ -9,17 +9,19 @@
 <a href="/index.html">메인</a>
 <table>
     <thead>
-    <th>id</th>
-    <th>username</th>
-    <th>age</th>
+        <th>id</th>
+        <th>username</th>
+        <th>age</th>
     </thead>
-</table>
+    <tbody>
     <c:forEach var="item" items="${members}">
-        <tr>
+    <tr>
         <td>${item.id}</td>
         <td>${item.username}</td>
         <td>${item.age}</td>
-        </tr>
+    </tr>
     </c:forEach>
+    </tbody>
+</table>
 </body>
 </html>
